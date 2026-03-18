@@ -59,7 +59,6 @@ const Navigation = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="font-display text-2xl font-bold gradient-text-primary"
             >
-              PORTFOLIO
             </motion.div>
           </Link>
 

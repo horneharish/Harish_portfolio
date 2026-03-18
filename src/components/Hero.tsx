@@ -20,8 +20,8 @@ const Hero = () => {
       {/* Gradient orbs */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse-glow" />
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-cyan-500/15 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: "1.5s" }} />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[140%] pointer-events-none" style={{background: "conic-gradient(from 0deg, transparent 0deg, hsl(0 90% 55% / 0.07) 60deg, transparent 120deg, hsl(180 80% 50% / 0.05) 180deg, transparent 240deg, hsl(355 85% 45% / 0.06) 300deg, transparent 360deg)", borderRadius: "50%", animation: "spin 20s linear infinite"}} />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] h-[90%] pointer-events-none" style={{background: "conic-gradient(from 180deg, transparent 0deg, hsl(355 85% 45% / 0.05) 90deg, transparent 150deg, hsl(0 90% 55% / 0.06) 210deg, transparent 270deg, hsl(180 80% 50% / 0.04) 330deg, transparent 360deg)", borderRadius: "50%", animation: "spin 30s linear infinite reverse"}} />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[140%] pointer-events-none" style={{ background: "conic-gradient(from 0deg, transparent 0deg, hsl(0 90% 55% / 0.07) 60deg, transparent 120deg, hsl(180 80% 50% / 0.05) 180deg, transparent 240deg, hsl(355 85% 45% / 0.06) 300deg, transparent 360deg)", borderRadius: "50%", animation: "spin 20s linear infinite" }} />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] h-[90%] pointer-events-none" style={{ background: "conic-gradient(from 180deg, transparent 0deg, hsl(355 85% 45% / 0.05) 90deg, transparent 150deg, hsl(0 90% 55% / 0.06) 210deg, transparent 270deg, hsl(180 80% 50% / 0.04) 330deg, transparent 360deg)", borderRadius: "50%", animation: "spin 30s linear infinite reverse" }} />
 
       {/* Content */}
       <div className="relative z-20 w-full max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
@@ -64,7 +64,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 2.5 }}
             className="text-lg text-muted-foreground max-w-xl mb-10"
           >
-            AI Creator and Automation Workflow Engineer with a focus on crafting innovative visual and video solutions through artificial intelligence. Proficient in designing and automating extensive content workflows tailored for a variety of brands. I specialize in integrating creative design with smart automation to produce scalable, high quality visuals across various product categories.
+            AI Filmmaker, AI Creator and Automation Workflow Engineer with a focus on crafting innovative visual and video solutions through artificial intelligence. Proficient in designing and automating extensive content workflows tailored for a variety of brands. I specialize in integrating creative design with smart automation to produce scalable, high quality visuals across various product categories.
           </motion.p>
 
           {/* Roles */}

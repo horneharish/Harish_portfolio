@@ -5,9 +5,24 @@ import { Briefcase } from "lucide-react";
 const experiences = [
   {
     id: 1,
+    role: "Generative Media Engineer",
+    company: "Paparazzi Entertainment Company",
+    period: "Feb 2026 - Present",
+    description: [
+      "AI Filmmaker: I create AI-powered films by leveraging generative AI tools for script development, visual generation, voice synthesis, and post-production editing.",
+      "Developing AI-assisted scripts and storyboards",
+      "Creating AI-generated visuals and animations",
+      "Using AI voiceover and sound design tools",
+      "Editing and refining final film outputs",
+      "Exploring emerging AI tools to improve production efficiency"
+    ],
+    technologies: ["AI Filmmaking", "Generative AI", "Script Development", "Visual Generation", "Voice Synthesis", "Post-Production"],
+  },
+  {
+    id: 2,
     role: "AI Creative Analyst",
     company: "SI House of Models",
-    period: "May 2024 - Present",
+    period: "May 2024 - Jan 2026",
     description: [
       "Built end-to-end AI workflows using ComfyUI, SDXL, and automation pipelines for largescale image and video generation.",
       "Developed Python-based automation systems, enabling high-volume, repeatable creative output with minimal manual effort.",

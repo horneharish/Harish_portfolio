@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import { ArrowUpRight, Play } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 
-import aiImageThumb from "@/assets/AI Image/image (2).png";
+import aiImageThumb from "@/assets/AI Image/replicate-prediction-5nb8ch4pn9rme0cs3vzr57vc4c.jpeg";
+import aiVideoThumb from "@/assets/AI Video/1.png";
 
 const categories = [
   {
@@ -17,9 +18,9 @@ const categories = [
   },
   {
     id: "ai-videos",
-    title: "AI Videos",
-    description: "All AI Videos",
-    image: aiImageThumb,
+    title: "AI Video",
+    description: "All AI Video",
+    image: aiVideoThumb,
     count: 13,
     type: "video",
   },
@@ -65,7 +66,7 @@ const WorksGrid = () => {
                     <motion.img
                       src={category.image}
                       alt={category.title}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-top"
                       animate={{
                         scale: hoveredId === category.id ? 1.1 : 1,
                       }}

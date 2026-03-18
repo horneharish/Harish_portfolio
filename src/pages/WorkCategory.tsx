@@ -6,14 +6,14 @@ import { useState, useEffect } from "react";
 import NotFound from "./NotFound";
 
 const aiImagesRaw = import.meta.glob('/src/assets/AI Image/*.{png,jpg,jpeg,webp}', { eager: true }) as Record<string, { default: string }>;
-const aiVideosRaw = import.meta.glob('/src/assets/AI Videos/*.mp4', { eager: true }) as Record<string, { default: string }>;
+const aiVideosRaw = import.meta.glob('/src/assets/AI Video/*.mp4', { eager: true }) as Record<string, { default: string }>;
 
 const aiImages = Object.values(aiImagesRaw).map(img => img.default);
 const aiVideos = Object.values(aiVideosRaw).map(vid => vid.default);
 
 const WorkCategory = () => {
   const { categoryId } = useParams<{ categoryId: string }>();
-  
+
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
@@ -34,8 +34,8 @@ const WorkCategory = () => {
 
   const isImages = categoryId === "ai-images";
   const items = isImages ? aiImages : aiVideos;
-  const title = isImages ? "AI Images" : "AI Videos";
-  const description = isImages ? "AI-generated images and portraits." : "AI-generated cinematic storytelling videos.";
+  const title = isImages ? "AI Images" : "AI Video";
+  const description = isImages ? "AI-generated images and portraits." : "AI-generated cinematic storytelling video.";
 
   return (
     <div className="min-h-screen py-32 px-6">
@@ -84,7 +84,7 @@ const WorkCategory = () => {
                     <motion.img
                       src={itemSrc}
                       alt={`AI Image ${index + 1}`}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
                     />
                   ) : (
                     <div className="relative w-full h-full">
@@ -112,7 +112,7 @@ const WorkCategory = () => {
 
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                
+
                 {/* View Icon */}
                 <motion.div className="absolute top-4 right-4 p-2 rounded-full glass opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <Maximize2 className="w-4 h-4 text-primary" />

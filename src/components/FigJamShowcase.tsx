@@ -8,6 +8,16 @@ const figJamItems = [
         link: "https://www.figma.com/board/I5OZg5Fl93uM9x1F6lSwtD/MY-WORKS?t=K4dcwmoiE8oROGns-0",
         buttonText: "Open FigJam"
     },
+    {
+        title: "POC Works",
+        link: "https://www.figma.com/board/z31FaShnjK1g9jxGSobB7z/Poc-Works?node-id=0-1&p=f&t=2P9dco5v2Mk1vUpx-0",
+        buttonText: "Open FigJam"
+    },
+    {
+        title: "Automation Templates",
+        link: "https://www.figma.com/board/MnJUZtslBzMqIkgx1bKSQO/Templets-Images?t=QVZHDumGNSOru8GD-0",
+        buttonText: "Open FigJam"
+    },
 ];
 
 const FigJamShowcase = () => {
@@ -25,7 +35,7 @@ const FigJamShowcase = () => {
                     </div>
                 </ScrollReveal>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {figJamItems.map((item, index) => (
                         <ScrollReveal key={index}>
                             <motion.a

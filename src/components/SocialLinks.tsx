@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail, FileText } from "lucide-react";
 import resumePdf from "@/assets/Harish_resume.pdf";
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com/batjoe3", label: "GitHub" },
+  { icon: Github, href: "https://github.com/horneharish", label: "GitHub" },
   { icon: Linkedin, href: "https://www.linkedin.com/in/harish-b-a7797024b/", label: "LinkedIn" },
   { icon: Mail, href: "https://mail.google.com/mail/?view=cm&fs=1&to=hornetharish@gmail.com", label: "Gmail" },
   { icon: FileText, href: resumePdf, label: "Resume" },
